@@ -8,10 +8,11 @@ function generateGrid() {
 
     for (let i = 0; i < gridSize; i++) {
         const newRow = document.createElement("div");
+        newRow.classList.add("row");
 
         for (let j = 0; j < gridSize; j++) {
             const rowBlock = document.createElement("div");
-            rowBlock.classList.add("row");
+            rowBlock.classList.add("block");
             rowBlock.addEventListener("mouseover", () => {
                 rowBlock.classList.add("sketched");
             })

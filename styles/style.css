@@ -5,11 +5,13 @@
 } */
 
 .row {
+    display: flex;
+    flex: 1;
+}
+
+.block {
     border: 1px solid gray;
-    min-width: 20px;
-    min-height: 20px;
-    display: inline-block;
-    margin-right: 2px;
+    flex: 1;
 }
 
 .sketched {
@@ -17,5 +19,8 @@
 }
 
 .container {
-    width: 960px;
+    width: 720px;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
 }
